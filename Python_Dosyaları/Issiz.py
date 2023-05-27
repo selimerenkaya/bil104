@@ -48,9 +48,12 @@ class Issiz(Insan.Insan):
         # statu_dictionary dictionarysi içindeki değeri de değiştirilmelidir
         self.__statu_dictionary["yonetici"] = yonetici_yil
 
-    # 4 - uygun_statu değişkeni için Get metotu
+    # 4 - uygun_statu değişkeni için Get/Set metotları
     def get_uygun_statu(self):
         return self.__uygun_statu
+
+    def set_uygun_statu(self, uygun_statu):
+        self.__uygun_statu = self.__uygun_statu
 
     # En uygun statünün bulunmasını sağlayan metot
     def statu_bul(self):
