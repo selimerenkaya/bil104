@@ -73,4 +73,3 @@ class Issiz(Insan.Insan):
         return f"Ad = {self.get_ad()}" \
                f"\nSoyad = {self.get_soyad()}" \
                f"\nEn Uygun Statü = {self.get_uygun_statu()}"
-
