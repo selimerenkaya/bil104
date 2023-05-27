@@ -74,6 +74,3 @@ class Issiz(Insan.Insan):
                f"\nSoyad = {self.get_soyad()}" \
                f"\nEn Uygun Statü = {self.get_uygun_statu()}"
 
-
-nesne = Issiz(10013168314, "Selim Eren", "Kaya", 18, "Erkek", "Türk", 15, 7, 5)
-print(nesne)
