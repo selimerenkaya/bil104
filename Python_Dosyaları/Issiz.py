@@ -53,7 +53,7 @@ class Issiz(Insan.Insan):
         return self.__uygun_statu
 
     def set_uygun_statu(self, uygun_statu):
-        self.__uygun_statu = self.__uygun_statu
+        self.__uygun_statu = uygun_statu
 
     # En uygun statünün bulunmasını sağlayan metot
     def statu_bul(self):
