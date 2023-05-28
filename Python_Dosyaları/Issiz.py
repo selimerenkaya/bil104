@@ -63,9 +63,9 @@ class Issiz(Insan.Insan):
             yonetici_deger = float(self.__statu_dictionary["yonetici"] * 45) / 100
             if mavi_yaka_deger > beyaz_yaka_deger and mavi_yaka_deger > yonetici_deger:
                 self.__uygun_statu = "Mavi Yaka"
-            elif beyaz_yaka_deger > mavi_yaka_deger and beyaz_yaka_deger > yonetici_deger:
+            elif beyaz_yaka_deger >= mavi_yaka_deger and beyaz_yaka_deger > yonetici_deger:
                 self.__uygun_statu = "Beyaz Yaka"
-            elif yonetici_deger > mavi_yaka_deger and yonetici_deger > beyaz_yaka_deger:
+            elif yonetici_deger >= mavi_yaka_deger and yonetici_deger >= beyaz_yaka_deger:
                 self.__uygun_statu = "Yönetici"
         except Exception as exception:
             print(f"HATA! Hata sebebi: {exception}")
