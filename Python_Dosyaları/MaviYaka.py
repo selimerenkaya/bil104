@@ -26,7 +26,7 @@ class MaviYaka(Calisan.Calisan):
             if float(self.get_tecrube_ay()) / 12 < 2:
                 zam_orani_oneri = self.__yipranma_payi * 10
             elif 2 <= float(self.get_tecrube_ay()) / 12 < 4 and self.get_maas() < 15000:
-                zam_orani_oneri = (self.get_maas() % self.get_tecrube_ay()) + (self.__yipranma_payi * 10)
+                zam_orani_oneri = (float(self.get_maas() % self.get_tecrube_ay()) / 2) + (self.__yipranma_payi * 10)
             elif float(self.get_tecrube_ay()) / 12 >= 4 and self.get_maas() < 25000:
                 zam_orani_oneri = (float(self.get_maas() % self.get_tecrube_ay()) / 3) + (self.__yipranma_payi * 10)
             self.set_zam_orani_oneri(zam_orani_oneri)
