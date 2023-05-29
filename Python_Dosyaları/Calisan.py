@@ -5,6 +5,12 @@ class Calisan(Insan.Insan):
     # Nesne oluşturulduğunda değişken ataması yapan metot
     def __init__(self, tc_no, ad, soyad, yas, cinsiyet, uyruk, sektor, tecrube_ay, maas):
         super().__init__(tc_no, ad, soyad, yas, cinsiyet, uyruk)
+        sektor_liste = ["teknoloji", "muhasebe", "inşaat", "diğer"]
+        while sektor.lower() not in sektor_liste:
+            print("Geçersiz bir sektör girdiniz.")
+            sektor = input("Geçerli bir sektör giriniz.\n"
+                           "Seçenekler = teknoloji, muhasebe, inşaat, diğer\n"
+                           "Sektör = ")
         self.__sektor = sektor
         self.__tecrube_ay = tecrube_ay
         self.__maas = maas
