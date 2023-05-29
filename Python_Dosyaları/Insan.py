@@ -53,8 +53,7 @@ class Insan:
 
     # Kullanıcı bilgilerini döndüren metot
     def __str__(self):
-        return f"* * * Kullanıcı Bilgileri * * *" \
-               f"\nTC No = {self.__tc_no}" \
+        return f"TC No = {self.__tc_no}" \
                f"\nAd = {self.__ad}" \
                f"\nSoyad = {self.__soyad}" \
                f"\nYaş = {self.__yas}" \
