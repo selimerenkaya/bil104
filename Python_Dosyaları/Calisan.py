@@ -77,7 +77,7 @@ class Calisan(Insan.Insan):
                 self.__zam_orani_oneri = (self.__maas % self.__tecrube_ay) / 2
 
             # zam hakkını hesaplayan kısım
-            self.__hakedilen_zam = float(self.__maas * self.__zam_orani_oneri) / 100
+            self.__hakedilen_zam = (float(self.__maas) / 100) * self.__zam_orani_oneri
 
             # yeni maaşı hesaplayan kısım
             self.__yeni_maas = self.__maas + self.__hakedilen_zam
