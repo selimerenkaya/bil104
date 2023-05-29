@@ -32,7 +32,7 @@ class MaviYaka(Calisan.Calisan):
             self.set_zam_orani_oneri(zam_orani_oneri)
 
             # zam hakkını hesaplayan kısım
-            hakedilen_zam = float(self.get_maas() * zam_orani_oneri) / 100
+            hakedilen_zam = ((float(self.get_maas())) / 100) * zam_orani_oneri
             self.set_hakedilen_zam(hakedilen_zam)
 
             # yeni maaşı hesaplayan kısım
