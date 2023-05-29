@@ -7,7 +7,7 @@ class Calisan(Insan.Insan):
         super().__init__(tc_no, ad, soyad, yas, cinsiyet, uyruk)
         sektor_liste = ["teknoloji", "muhasebe", "inşaat", "diğer"]
         while sektor.lower() not in sektor_liste:
-            print("Geçersiz bir sektör girdiniz.")
+            print("Geçersiz bir sektör girdiniz.\n")
             sektor = input("Geçerli bir sektör giriniz.\n"
                            "Seçenekler = teknoloji, muhasebe, inşaat, diğer\n"
                            "Sektör = ")
