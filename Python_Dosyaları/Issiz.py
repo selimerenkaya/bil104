@@ -58,9 +58,9 @@ class Issiz(Insan.Insan):
     # En uygun statünün bulunmasını sağlayan metot
     def statu_bul(self):
         try:
-            mavi_yaka_deger = float(self.__statu_dictionary["mavi_yaka"] * 20) / 100
-            beyaz_yaka_deger = float(self.__statu_dictionary["beyaz_yaka"] * 35) / 100
-            yonetici_deger = float(self.__statu_dictionary["yonetici"] * 45) / 100
+            mavi_yaka_deger = (float(self.__statu_dictionary["mavi_yaka"]) / 100) * 20
+            beyaz_yaka_deger = (float(self.__statu_dictionary["beyaz_yaka"]) / 100) * 35
+            yonetici_deger = (float(self.__statu_dictionary["yonetici"]) / 100) * 45
             if mavi_yaka_deger > beyaz_yaka_deger and mavi_yaka_deger > yonetici_deger:
                 self.__uygun_statu = "Mavi Yaka"
             elif beyaz_yaka_deger >= mavi_yaka_deger and beyaz_yaka_deger > yonetici_deger:
